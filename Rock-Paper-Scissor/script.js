@@ -21,6 +21,11 @@ if(confimation)
     this.Start();
 }
 
+else
+{
+    alert('Okay Thanks may be later');
+}
+
 function Start()
 {
     let player = prompt("Enter the your choice in rock / paper / scissor");
@@ -39,9 +44,7 @@ function Start()
                     : Player === 'paper' && computerplay === 'scissor' ? `computer win's` 
                     :Player === 'scissor' && computerplay === 'rock' ? `computer win's` : `Player win's`;
 
-            alert(`Computer chioce is ${computerplay}`);
-
-            alert(result);
+            alert(`Player chioce is ${Player}\nComputer chioce is ${computerplay}\n${result}`);
 
             let continue_game = prompt('Do you want continue the game ? y / n ');
 
